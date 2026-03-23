@@ -3,7 +3,7 @@
 KOSS에서 진행하는 2026학년도 1학기 웹 프로젝트 스터디 레포입니다.
 
 ## 스터디 목표
-- HTML, CSS, JavaScript 기초를 직접 수정하면서 익힙니다.
+- HTML, CSS, JavaScript 기초를 직접 수정하면서 익힙니다. https://www.youtube.com/watch?v=ffENjt7aEdc
 - AI 도구를 활용해 웹 페이지를 스스로 개선하는 경험을 쌓습니다.
 - 주차별 과제를 통해 개인 결과물을 누적하고, 마지막에는 각자 프로젝트로 확장합니다.
 
