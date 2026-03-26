@@ -1,0 +1,100 @@
+:root {
+    --sakura-pink: #ffd1dc;
+    --soft-white: #fff5f7;
+    --dark-pink: #ff94ab;
+    --text-color: #5d4a4e;
+}
+
+body {
+    background-color: var(--soft-white);
+    font-family: 'Malgun Gothic', sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 148, 171, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 { color: var(--dark-pink); }
+
+button {
+    background-color: var(--sakura-pink);
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    color: var(--text-color);
+    width: 80%;
+}
+
+button:hover { background-color: var(--dark-pink); color: white; }
+
+.hidden { display: none !important; }
+
+/* 퀴즈 스타일 */
+#char-display {
+    font-size: 80px;
+    margin: 20px 0;
+    color: var(--dark-pink);
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* 떨어지는 게임 스타일 */
+#falling-container {
+    height: 300px;
+    border: 2px dashed var(--sakura-pink);
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.falling-word {
+    position: absolute;
+    background: var(--sakura-pink);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#word-input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--sakura-pink);
+    border-radius: 10px;
+    outline: none;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* 벚꽃 효과 애니메이션 */
+@keyframes fall {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(300px); }
+}

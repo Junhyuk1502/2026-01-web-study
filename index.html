@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사쿠라 일본어 공부방</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌸 일본어 단어 공부 🌸</h1>
+            <div id="stats" class="hidden">
+                <span>점수: <b id="score">0</b></span>
+                <span>목숨: <b id="lives">3</b></span>
+            </div>
+        </header>
+
+        <!-- 메인 메뉴 -->
+        <nav id="menu">
+            <button onclick="startQuiz()">1. 발음 맞추기 </button>
+            <button onclick="startGame()">2. 단어 맞추기 게임</button>
+        </nav>
+
+        <!-- 게임 1: 객관식 퀴즈 -->
+        <section id="quiz-area" class="hidden">
+            <div id="char-display">あ</div>
+            <div id="options" class="options-grid">
+                <!-- 버튼들이 자바스크립트로 생성됨 -->
+            </div>
+        </section>
+
+        <!-- 게임 2: 떨어지는 단어 -->
+        <section id="game-area" class="hidden">
+            <div id="falling-container"></div>
+            <div class="input-box">
+                <input type="text" id="word-input" placeholder="뜻을 입력하세요!" autocomplete="off">
+            </div>
+        </section>
+
+        <!-- 결과 화면 -->
+        <section id="result-area" class="hidden">
+            <h2>게임 종료!</h2>
+            <p>최종 점수: <span id="final-score">0</span>점</p>
+            <button onclick="location.reload()">다시 시작하기</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
